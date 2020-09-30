@@ -1,4 +1,49 @@
-body,html {
+body, html {
     margin: 0;
-    font-family: sans-serif;
+    font-family: Arial;
+	background-color:#d9d9d9;
+}
+
+h1,h4 {
+	
+	text-align: center;
+}
+
+/*div{
+	background-color: #ffad33;
+}*/
+
+.content {
+    margin: 0 auto;
+    width: 500px;
+}
+
+table, td, th {
+    border: 2px solid#737373;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 20px;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+.form {
+    margin-top: 20px;
+    margin-left: 40px;
+
+    
+}
+
+
+#content {
+    width: 70%;
 }

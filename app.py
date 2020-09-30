@@ -47,11 +47,11 @@ def update(id):
     if request.method == 'POST':
         task.content = request.form['content']
     
-    try:
-        db.session.commit()
-        return redirect('/')
-    except:
-        return 'There was an issue updating your task'    
+        try:
+            db.session.commit()
+            return redirect('/')
+        except:
+            return 'There was an issue updating your task'    
 
 
     else:
