@@ -18,6 +18,10 @@ class Todo(db.Model):
 def index():
     if request.method == 'POST':
         task_content = request.form['content']
+        if not task_content:
+            tasks = Todo.query.order_by(Todo.date_created).all()
+            return render_template('index.html', tasks=tasks)
+        
         new_task = Todo(content=task_content)
 
         try:
